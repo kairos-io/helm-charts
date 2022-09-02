@@ -1,0 +1,45 @@
+apiVersion: v1
+entries:
+  c3os-crds:
+  - apiVersion: v2
+    created: "2022-09-02T15:16:46.751454823Z"
+    description: A Helm chart for deploying the c3os CRDs
+    digest: df786c658881d9edb5b607f09a486a5535090b8ca3ab007a7824c020803db7d9
+    home: https://docs.c3os.io/
+    maintainers:
+    - email: mudler@c3os.io
+      name: Ettore Di Giacinto
+    name: c3os-crds
+    type: application
+    urls:
+    - https://github.com/c3os-io/helm-charts/releases/download/c3os-crds-0.0.1/c3os-crds-0.0.1.tgz
+    version: 0.0.1
+  entangle:
+  - apiVersion: v2
+    created: "2022-09-02T15:16:46.883927919Z"
+    description: A Helm chart for entangle
+    digest: 9df4ca9301180fa2ad9f26267c11bfc4a303be239fc8b6b7ea5b144e8ba091d1
+    home: https://docs.c3os.io/
+    maintainers:
+    - email: mudler@c3os.io
+      name: Ettore Di Giacinto
+    name: entangle
+    type: application
+    urls:
+    - https://github.com/c3os-io/helm-charts/releases/download/entangle-0.0.1/entangle-0.0.1.tgz
+    version: 0.0.1
+  entangle-proxy:
+  - apiVersion: v2
+    created: "2022-09-02T15:16:47.027879Z"
+    description: A Helm chart for entangle
+    digest: ee2add5b3fb2c077317308e73cdddaadbdf9287c3325459a39d8c5b0def8e73e
+    home: https://docs.c3os.io/
+    maintainers:
+    - email: mudler@c3os.io
+      name: Ettore Di Giacinto
+    name: entangle-proxy
+    type: application
+    urls:
+    - https://github.com/c3os-io/helm-charts/releases/download/entangle-proxy-0.0.1/entangle-proxy-0.0.1.tgz
+    version: 0.0.1
+generated: "2022-09-02T15:16:46.580400268Z"
