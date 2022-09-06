@@ -2,6 +2,19 @@ apiVersion: v1
 entries:
   c3os-crds:
   - apiVersion: v2
+    created: "2022-09-06T20:30:50.860569923Z"
+    description: A Helm chart for deploying the c3os CRDs
+    digest: ea61801a5df20e1dde5a91da285151f824aec3ecbe9927c983d4fde1551db97d
+    home: https://docs.c3os.io/
+    maintainers:
+    - email: mudler@c3os.io
+      name: Ettore Di Giacinto
+    name: c3os-crds
+    type: application
+    urls:
+    - https://github.com/c3os-io/helm-charts/releases/download/c3os-crds-0.0.3/c3os-crds-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
     created: "2022-09-03T22:47:59.963329448Z"
     description: A Helm chart for deploying the c3os CRDs
     digest: 061c7bfed195c59037efb25a229dbeda7b918122866a00095d7f754f105a5509
