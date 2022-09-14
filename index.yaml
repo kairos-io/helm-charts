@@ -83,6 +83,20 @@ entries:
     version: 0.0.1
   osbuilder:
   - apiVersion: v2
+    appVersion: v0.1.0
+    created: "2022-09-14T19:53:12.25617414Z"
+    description: A Helm chart for osbuilder
+    digest: 2a06d3fbe1c175a0c490ed4b45eb8b20baee2da2c0a10deb0a9dd0ca6ddb299e
+    home: https://docs.c3os.io/
+    maintainers:
+    - email: mudler@c3os.io
+      name: Ettore Di Giacinto
+    name: osbuilder
+    type: application
+    urls:
+    - https://github.com/c3os-io/helm-charts/releases/download/osbuilder-0.1.0/osbuilder-0.1.0.tgz
+    version: 0.1.0
+  - apiVersion: v2
     created: "2022-09-03T22:48:00.083182132Z"
     description: A Helm chart for osbuilder
     digest: 5d81ed377de8a330454c5763a051e18e6bcbe2781ba74998d4aa495ef71e2b3e
