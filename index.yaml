@@ -55,6 +55,20 @@ entries:
     version: 0.0.1
   entangle:
   - apiVersion: v2
+    appVersion: v0.1.0
+    created: "2022-09-19T14:42:48.049673888Z"
+    description: A Helm chart for entangle
+    digest: 01ac1bb171b816e784c5fec92a8747ea6f1698ec6f14c4d2738dab6feb8ac634
+    home: https://kairos.io/
+    maintainers:
+    - email: mudler@kairos.io
+      name: Ettore Di Giacinto
+    name: entangle
+    type: application
+    urls:
+    - https://github.com/kairos-io/helm-charts/releases/download/entangle-0.0.2/entangle-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
     created: "2022-09-02T15:16:46.883927919Z"
     description: A Helm chart for entangle
     digest: 9df4ca9301180fa2ad9f26267c11bfc4a303be239fc8b6b7ea5b144e8ba091d1
@@ -69,6 +83,20 @@ entries:
     version: 0.0.1
   entangle-proxy:
   - apiVersion: v2
+    appVersion: v0.1.0
+    created: "2022-09-19T14:42:48.221291081Z"
+    description: A Helm chart for entangle
+    digest: 9904586570c390ba877ece1644e85d55319f73d6d4f24684416a28418abb8676
+    home: https://kairos.io/
+    maintainers:
+    - email: mudler@kairos.io
+      name: Ettore Di Giacinto
+    name: entangle-proxy
+    type: application
+    urls:
+    - https://github.com/kairos-io/helm-charts/releases/download/entangle-proxy-0.0.2/entangle-proxy-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
     created: "2022-09-02T15:16:47.027879Z"
     description: A Helm chart for entangle
     digest: ee2add5b3fb2c077317308e73cdddaadbdf9287c3325459a39d8c5b0def8e73e
@@ -81,7 +109,35 @@ entries:
     urls:
     - https://github.com/c3os-io/helm-charts/releases/download/entangle-proxy-0.0.1/entangle-proxy-0.0.1.tgz
     version: 0.0.1
+  kairos-crds:
+  - apiVersion: v2
+    created: "2022-09-19T14:42:48.405211531Z"
+    description: A Helm chart for deploying the Kairos CRDs
+    digest: 7fc2e27cad65a6008a3cca6f2c5e9aa6b49ce3bf42f7efd59c1824f111f86137
+    home: https://kairos.io/
+    maintainers:
+    - email: mudler@kairos.io
+      name: Ettore Di Giacinto
+    name: kairos-crds
+    type: application
+    urls:
+    - https://github.com/kairos-io/helm-charts/releases/download/kairos-crds-0.0.5/kairos-crds-0.0.5.tgz
+    version: 0.0.5
   osbuilder:
+  - apiVersion: v2
+    appVersion: v0.1.1
+    created: "2022-09-19T14:42:48.574223412Z"
+    description: A Helm chart for osbuilder
+    digest: 50284474a3b3c9ea58f2cd8e61989010caadb0e3c27f71010a9950be0788094c
+    home: https://kairos.io/
+    maintainers:
+    - email: mudler@kairos.io
+      name: Ettore Di Giacinto
+    name: osbuilder
+    type: application
+    urls:
+    - https://github.com/kairos-io/helm-charts/releases/download/osbuilder-0.1.1/osbuilder-0.1.1.tgz
+    version: 0.1.1
   - apiVersion: v2
     appVersion: v0.1.0
     created: "2022-09-14T19:53:12.25617414Z"
