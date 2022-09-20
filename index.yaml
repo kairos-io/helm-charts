@@ -53,6 +53,21 @@ entries:
     urls:
     - https://github.com/c3os-io/helm-charts/releases/download/c3os-crds-0.0.1/c3os-crds-0.0.1.tgz
     version: 0.0.1
+  cluster-api-provider-kairos:
+  - apiVersion: v2
+    appVersion: v0.0.1
+    created: "2022-09-20T10:59:43.184620021Z"
+    description: A Helm chart for the Kairos CAPI provider
+    digest: 5b1d5b7298b7cc171ba6ad425600e8b0d497cdb846276509cc4bfb741fb713a9
+    home: https://kairos.io/
+    maintainers:
+    - email: mudler@kairos.io
+      name: Ettore Di Giacinto
+    name: cluster-api-provider-kairos
+    type: application
+    urls:
+    - https://github.com/kairos-io/helm-charts/releases/download/cluster-api-provider-kairos-0.0.1/cluster-api-provider-kairos-0.0.1.tgz
+    version: 0.0.1
   entangle:
   - apiVersion: v2
     appVersion: v0.1.0
@@ -110,6 +125,19 @@ entries:
     - https://github.com/c3os-io/helm-charts/releases/download/entangle-proxy-0.0.1/entangle-proxy-0.0.1.tgz
     version: 0.0.1
   kairos-crds:
+  - apiVersion: v2
+    created: "2022-09-20T10:59:43.312779061Z"
+    description: A Helm chart for deploying the Kairos CRDs
+    digest: ac47d33330f543194b90d00aae5b4f8364038a071323ae8285fa5c0886ecb4c7
+    home: https://kairos.io/
+    maintainers:
+    - email: mudler@kairos.io
+      name: Ettore Di Giacinto
+    name: kairos-crds
+    type: application
+    urls:
+    - https://github.com/kairos-io/helm-charts/releases/download/kairos-crds-0.0.6/kairos-crds-0.0.6.tgz
+    version: 0.0.6
   - apiVersion: v2
     created: "2022-09-19T14:42:48.405211531Z"
     description: A Helm chart for deploying the Kairos CRDs
