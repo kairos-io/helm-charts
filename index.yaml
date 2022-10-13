@@ -140,6 +140,19 @@ entries:
     version: 0.0.1
   kairos-crds:
   - apiVersion: v2
+    created: "2022-10-13T22:22:33.115450636Z"
+    description: A Helm chart for deploying the Kairos CRDs
+    digest: 48fbfaa4bbc08dbe89beaf7ac3e86b0ece1fbf05c685774532160a8e6e6f554e
+    home: https://kairos.io/
+    maintainers:
+    - email: mudler@kairos.io
+      name: Ettore Di Giacinto
+    name: kairos-crds
+    type: application
+    urls:
+    - https://github.com/kairos-io/helm-charts/releases/download/kairos-crds-0.0.8/kairos-crds-0.0.8.tgz
+    version: 0.0.8
+  - apiVersion: v2
     created: "2022-10-13T21:28:25.58580641Z"
     description: A Helm chart for deploying the Kairos CRDs
     digest: 7014b2edd259ea1247a0bcc6a6fcd1ab98d256bcfcd6a1051a355b0da4d9fe6d
