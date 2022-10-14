@@ -126,6 +126,19 @@ entries:
     version: 0.0.1
   kairos-challenger:
   - apiVersion: v2
+    created: "2022-10-14T10:16:20.063377969Z"
+    description: A Helm chart for deploying the Kairos challenger
+    digest: abcee96bbd819a02feff439f0877efe8fe1091a1f81c44b603f6925a889ed8fb
+    home: https://kairos.io/
+    maintainers:
+    - email: mudler@kairos.io
+      name: Ettore Di Giacinto
+    name: kairos-challenger
+    type: application
+    urls:
+    - https://github.com/kairos-io/helm-charts/releases/download/kairos-challenger-0.0.2/kairos-challenger-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
     created: "2022-10-13T21:28:25.297557254Z"
     description: A Helm chart for deploying the Kairos challenger
     digest: be043d96489a93ab8f915d4a0b36528e40a7224ffa616802da2debf6609bcdaf
