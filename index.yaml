@@ -71,6 +71,20 @@ entries:
   entangle:
   - apiVersion: v2
     appVersion: v0.1.0
+    created: "2022-11-10T17:50:57.262091165Z"
+    description: A Helm chart for entangle
+    digest: 61442e0521e55605a5535e703171ff50da4470112f5875bcb69dd8ee8f52aeaa
+    home: https://kairos.io/
+    maintainers:
+    - email: mudler@kairos.io
+      name: Ettore Di Giacinto
+    name: entangle
+    type: application
+    urls:
+    - https://github.com/kairos-io/helm-charts/releases/download/entangle-0.0.3/entangle-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: v0.1.0
     created: "2022-09-19T14:42:48.049673888Z"
     description: A Helm chart for entangle
     digest: 01ac1bb171b816e784c5fec92a8747ea6f1698ec6f14c4d2738dab6feb8ac634
