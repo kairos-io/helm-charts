@@ -140,6 +140,20 @@ entries:
     version: 0.0.1
   entangle-proxy:
   - apiVersion: v2
+    appVersion: v0.1.2
+    created: "2022-11-11T12:56:22.245252653Z"
+    description: A Helm chart for entangle
+    digest: 7b71deb9993ff67dfac7117e0cebf9db74d44cd3d9a2f47fbe35ffcfc424f9b3
+    home: https://kairos.io/
+    maintainers:
+    - email: mudler@kairos.io
+      name: Ettore Di Giacinto
+    name: entangle-proxy
+    type: application
+    urls:
+    - https://github.com/kairos-io/helm-charts/releases/download/entangle-proxy-0.0.4/entangle-proxy-0.0.4.tgz
+    version: 0.0.4
+  - apiVersion: v2
     appVersion: v0.1.1
     created: "2022-11-11T10:06:51.273367827Z"
     description: A Helm chart for entangle
