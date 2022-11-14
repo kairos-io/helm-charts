@@ -70,6 +70,20 @@ entries:
     version: 0.0.1
   entangle:
   - apiVersion: v2
+    appVersion: v0.1.2
+    created: "2022-11-14T22:59:13.115035421Z"
+    description: A Helm chart for entangle
+    digest: 83890ca11cf12b99c1c486e8dc5ada5d6d62944c1e7b8008550621d24124636d
+    home: https://kairos.io/
+    maintainers:
+    - email: mudler@kairos.io
+      name: Ettore Di Giacinto
+    name: entangle
+    type: application
+    urls:
+    - https://github.com/kairos-io/helm-charts/releases/download/entangle-0.0.8/entangle-0.0.8.tgz
+    version: 0.0.8
+  - apiVersion: v2
     appVersion: v0.1.1
     created: "2022-11-14T20:54:11.468976022Z"
     description: A Helm chart for entangle
@@ -236,19 +250,6 @@ entries:
     - https://github.com/kairos-io/helm-charts/releases/download/kairos-challenger-0.0.1/kairos-challenger-0.0.1.tgz
     version: 0.0.1
   kairos-crds:
-  - apiVersion: v2
-    created: "2022-11-14T22:58:55.789941733Z"
-    description: A Helm chart for deploying the Kairos CRDs
-    digest: 4cf094d7698c1f639db9cc1fcfad1d25b9fdc956cf43e650c4855005ab28adf3
-    home: https://kairos.io/
-    maintainers:
-    - email: mudler@kairos.io
-      name: Ettore Di Giacinto
-    name: kairos-crds
-    type: application
-    urls:
-    - https://github.com/kairos-io/helm-charts/releases/download/kairos-crds-0.0.11/kairos-crds-0.0.11.tgz
-    version: 0.0.11
   - apiVersion: v2
     created: "2022-11-07T22:29:19.232454184Z"
     description: A Helm chart for deploying the Kairos CRDs
