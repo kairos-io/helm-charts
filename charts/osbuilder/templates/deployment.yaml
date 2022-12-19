@@ -98,7 +98,7 @@ kind: Deployment
 metadata:
     labels:
         app.kubernetes.io/name: osbuilder-nginx
-    name: '{{ include "helm-chart.fullname" . }}'
+    name: 'osbuilder-nginx'
     namespace: '{{.Release.Namespace}}'
 spec:
     replicas: 1
