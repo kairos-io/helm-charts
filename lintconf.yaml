@@ -1,6 +1,6 @@
 ---
-validate-maintainers: false
 rules:
+  validate-maintainers: false
   braces:
     min-spaces-inside: 0
     max-spaces-inside: 0
