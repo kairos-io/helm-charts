@@ -39,15 +39,28 @@ spec:
                         properties:
                             TPMHash:
                                 type: string
-                            partitionSecrets:
-                                additionalProperties:
+                            partitions:
+                                items:
+                                    description: 'PartitionSpec defines a Partition.
+                                        A partition can be identified using any of
+                                        the fields: Label, DeviceName, UUID. The Secret
+                                        defines the secret which decrypts the partition.'
                                     properties:
-                                        name:
+                                        deviceName:
                                             type: string
-                                        path:
+                                        label:
+                                            type: string
+                                        secret:
+                                            properties:
+                                                name:
+                                                    type: string
+                                                path:
+                                                    type: string
+                                            type: object
+                                        uuid:
                                             type: string
                                     type: object
-                                type: object
+                                type: array
                             quarantined:
                                 type: boolean
                         type: object
