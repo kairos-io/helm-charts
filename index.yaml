@@ -307,6 +307,19 @@ entries:
     version: 0.0.1
   kairos-crds:
   - apiVersion: v2
+    created: "2023-01-23T21:38:37.116996703Z"
+    description: A Helm chart for deploying the Kairos CRDs
+    digest: a5eec5c1289afdfa89cce2999a352a74789e262624f92e39f28647ebc172854a
+    home: https://kairos.io/
+    maintainers:
+    - email: mudler@kairos.io
+      name: Ettore Di Giacinto
+    name: kairos-crds
+    type: application
+    urls:
+    - https://github.com/kairos-io/helm-charts/releases/download/kairos-crds-0.0.13/kairos-crds-0.0.13.tgz
+    version: 0.0.13
+  - apiVersion: v2
     created: "2022-11-07T22:29:19.232454184Z"
     description: A Helm chart for deploying the Kairos CRDs
     digest: 03408645c3d4f48b489a61cca77da7b72094be4d21a25c87f40bb40e70201153
@@ -566,4 +579,4 @@ entries:
     urls:
     - https://github.com/c3os-io/helm-charts/releases/download/osbuilder-0.0.1/osbuilder-0.0.1.tgz
     version: 0.0.1
-generated: "2023-01-23T20:28:13.064921027Z"
+generated: "2023-01-23T21:38:37.117199905Z"
