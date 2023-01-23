@@ -13,7 +13,7 @@ image:
   # controller image to be used. Leave empty to use
   repository: ""
   # image tag, leave empty to use chart's AppVersion
-  tag: "latest"
+  tag: ""
 
 podAnnotations: {}
 nodeSelector: {}
