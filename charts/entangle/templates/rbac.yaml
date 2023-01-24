@@ -176,7 +176,7 @@ roleRef:
     name: entangle-leader-election-role
 subjects:
   - kind: ServiceAccount
-    name: '{{ include "helm-chart.serviceAccountName" . }}'
+    name: '{{ include "entangle.serviceAccountName" . }}'
     namespace: '{{.Release.Namespace}}'
 ---
 apiVersion: rbac.authorization.k8s.io/v1
@@ -189,7 +189,7 @@ roleRef:
     name: entangle-manager-role
 subjects:
   - kind: ServiceAccount
-    name: '{{ include "helm-chart.serviceAccountName" . }}'
+    name: '{{ include "entangle.serviceAccountName" . }}'
     namespace: '{{.Release.Namespace}}'
 ---
 apiVersion: rbac.authorization.k8s.io/v1
@@ -202,5 +202,5 @@ roleRef:
     name: entangle-proxy-role
 subjects:
   - kind: ServiceAccount
-    name: '{{ include "helm-chart.serviceAccountName" . }}'
+    name: '{{ include "entangle.serviceAccountName" . }}'
     namespace: '{{.Release.Namespace}}'
