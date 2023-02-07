@@ -14,7 +14,6 @@
   <a href="https://github.com/kairos-io/helm-charts/issues"><img src="https://img.shields.io/github/issues/kairos-io/helm-charts"></a>
   <a href="https://kairos.io/docs/" target=_blank> <img src="https://img.shields.io/badge/Documentation-blue"
          alt="docs"></a>
-  <img src="https://img.shields.io/badge/made%20with-Go-blue">
 </p>
 
 
