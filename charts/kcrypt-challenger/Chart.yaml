@@ -7,5 +7,5 @@ home: https://kairos.io/
 maintainers:
 - name: Ettore Di Giacinto
   email: mudler@kairos.io
-version: "0.3"
-appVersion: "v0.3"
+version: "0.4"
+appVersion: "v0.4"
