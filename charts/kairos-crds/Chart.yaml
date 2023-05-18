@@ -1,10 +1,10 @@
 apiVersion: v2
 name: kairos-crds
 description: A Helm chart for deploying the Kairos CRDs
-icon: 
+icon: ""
 type: application
 home: https://kairos.io/
 maintainers:
 - name: Ettore Di Giacinto
   email: mudler@kairos.io
-version: 0.0.13
+version: 0.0.14
