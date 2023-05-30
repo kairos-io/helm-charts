@@ -48,12 +48,7 @@ spec:
                   - --health-probe-bind-address=:8081
                   - --metrics-bind-address=127.0.0.1:8080
                   - --leader-elect
-                  - --tool-image={{ .Values.image.repository | default "quay.io/kairos/osbuilder-tools" }}:{{ .Values.image.tag | default .Chart.AppVersion }}
-                  - --serve-image={{ .Values.image.serving | default "nginx" }}
-                  - --copy-to-namespace={{ .Release.Namespace }}
-                  - --copy-role=osartifactbuilder-operator-artifactCopier
-                  - --copy-to-pod-label=app.kubernetes.io/name=osbuilder-nginx
-                  - --copy-to-path="/usr/share/nginx/html"
+                  - '--tool-image={{ .Values.image.toolsRepository | default "quay.io/kairos/osbuilder-tools" }}:{{ .Values.image.tag | default .Chart.AppVersion }}'
                 command:
                   - /manager
                 image: '{{ .Values.image.repository | default "quay.io/kairos/osbuilder" }}:{{ .Values.image.tag | default .Chart.AppVersion }}'
@@ -118,9 +113,20 @@ spec:
                 volumeMounts:
                   - mountPath: /usr/share/nginx/html
                     name: nginx-public
+                  - mountPath: /etc/nginx/conf.d
+                    name: config
+                    readOnly: true
             serviceAccountName: '{{ include "helm-chart.serviceAccountName" . }}'
             terminationGracePeriodSeconds: 10
+            securityContext:
+              fsGroup: 101
             volumes:
               - name: nginx-public
                 persistentVolumeClaim:
                     claimName: osartifactbuilder-operator-nginx-public
+              - name: config
+                configMap:
+                  name: nginx-config
+                  items:
+                    - key: nginx.conf
+                      path: default.conf

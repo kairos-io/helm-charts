@@ -17,3 +17,38 @@ kind: ConfigMap
 metadata:
     name: osartifactbuilder-operator-manager-config
     namespace: '{{.Release.Namespace}}'
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-config
+data:
+  nginx.conf: |
+    server {
+      listen       80;
+      server_name  localhost;
+
+      client_max_body_size  5000M;
+
+      #access_log  /var/log/nginx/host.access.log  main;
+
+      location ~ "/upload/([0-9a-zA-Z-.]*)$" {
+        alias     /usr/share/nginx/html/$1;
+        client_body_temp_path  /tmp;
+        dav_methods  PUT DELETE MKCOL COPY MOVE;
+        create_full_put_path   on;
+        dav_access             group:rw  all:r;
+      }
+
+      location / {
+        root   /usr/share/nginx/html;
+        autoindex on;
+      }
+
+      # redirect server error pages to the static page /50x.html
+      #
+      error_page   500 502 503 504  /50x.html;
+        location = /50x.html {
+        root   /usr/share/nginx/html;
+      }
+    }
