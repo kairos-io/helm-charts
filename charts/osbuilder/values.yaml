@@ -12,9 +12,12 @@ imagePullSecrets: []
 image:
   # controller image to be used. Leave empty to use
   repository: ""
-  toolsRepository: ""
-  # image tag, leave empty to use chart's AppVersion
+  # tag of the controller image. Leave empty to use chart's AppVersion
   tag: ""
+
+toolsImage:
+  repository: "quay.io/kairos/auroraboot"
+  tag: "latest"
 
 podAnnotations: {}
 nodeSelector: {}

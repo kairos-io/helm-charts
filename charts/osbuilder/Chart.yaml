@@ -8,5 +8,5 @@ maintainers:
 - name: Ettore Di Giacinto
   email: mudler@kairos.io
 
-version: 0.6.0
-appVersion: "v0.7.0"
+version: 0.7.0
+appVersion: "v0.401.0"
