@@ -16,7 +16,7 @@ image:
   # image tag, leave empty to use chart's AppVersion
   tag: ""
   serviceRepository: "quay.io/mudler/edgevpn"
-  serviceTag: "v0.28.4"
+  serviceTag: "latest"
 
 podAnnotations: {}
 nodeSelector: {}
