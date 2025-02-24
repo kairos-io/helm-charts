@@ -14,7 +14,9 @@ image:
   repository: ""
   # tag of the controller image. Leave empty to use chart's AppVersion
   tag: ""
-
+kubeRbacProxyImage:
+  repository: "gcr.io/kubebuilder/kube-rbac-proxy"
+  tag: "v0.11.0"
 toolsImage:
   repository: "quay.io/kairos/auroraboot"
   tag: "latest"
@@ -38,6 +40,9 @@ tls:
 
 nginx:
   pvcSize: 3Gi
+  image:
+    repository: "nginx"
+    tag: "latest"
 
 ## Resource limits & requests
 ## Ref: https://kubernetes.io/docs/user-guide/compute-resources/

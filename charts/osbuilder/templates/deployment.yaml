@@ -29,7 +29,7 @@ spec:
                   - --upstream=http://127.0.0.1:8080/
                   - --logtostderr=true
                   - --v=0
-                image: gcr.io/kubebuilder/kube-rbac-proxy:v0.11.0
+                image: '{{ .Values.kubeRbacProxyImage.repository }}:{{ .Values.kubeRbacProxyImage.tag }}'
                 name: kube-rbac-proxy
                 ports:
                   - containerPort: 8443
@@ -106,7 +106,7 @@ spec:
                 app.kubernetes.io/name: osbuilder-nginx
         spec:
             containers:
-              - image: nginx
+              - image: '{{ .Values.nginx.image.repository }}:{{ .Values.nginx.image.tag }}'
                 name: nginx
                 ports:
                   - containerPort: 80
