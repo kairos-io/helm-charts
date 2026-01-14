@@ -39,6 +39,37 @@ spec:
                         properties:
                             TPMHash:
                                 type: string
+                            attestation:
+                                description: AttestationSpec defines TPM attestation data for TOFU
+                                    enrollment and verification With transient AK approach, only the
+                                    EK is stored as the trusted identity
+                                properties:
+                                    ekPublicKey:
+                                        description: EKPublicKey stores the Endorsement Key public key
+                                            in PEM format This is the single trusted identity for the TPM
+                                        type: string
+                                    enrolledAt:
+                                        description: EnrolledAt timestamp when this TPM was first enrolled
+                                        format: date-time
+                                        type: string
+                                    lastVerifiedAt:
+                                        description: LastVerifiedAt timestamp of the last successful attestation
+                                        format: date-time
+                                        type: string
+                                    pcrValues:
+                                        description: PCRValues stores the expected PCR values for boot
+                                            state verification
+                                        properties:
+                                            pcrs:
+                                                additionalProperties:
+                                                    type: string
+                                                description: 'PCRs is a flexible map of PCR index (as string)
+                                                    to PCR value (hex-encoded) Example: {"0": "a1b2c3...", "7":
+                                                    "d4e5f6...", "11": "g7h8i9..."} This allows for any combination
+                                                    of PCRs without hardcoding specific indices'
+                                                type: object
+                                        type: object
+                                type: object
                             partitions:
                                 items:
                                     description: 'PartitionSpec defines a Partition.
