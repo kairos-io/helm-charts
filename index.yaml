@@ -378,6 +378,20 @@ entries:
     version: 0.0.1
   kairos-challenger:
   - apiVersion: v2
+    appVersion: v0.12.1
+    created: "2026-01-27T14:46:16.207086149Z"
+    description: A Helm chart for deploying the Kairos challenger
+    digest: a794d985c0ee818c9be120a66ff072fd13b57ea327b359541f3d485f232b2982
+    home: https://kairos.io/
+    maintainers:
+    - email: mudler@kairos.io
+      name: Ettore Di Giacinto
+    name: kairos-challenger
+    type: application
+    urls:
+    - https://github.com/kairos-io/helm-charts/releases/download/kairos-challenger-0.12.1/kairos-challenger-0.12.1.tgz
+    version: 0.12.1
+  - apiVersion: v2
     appVersion: v0.6.0
     created: "2023-10-30T07:16:45.320821625Z"
     description: A Helm chart for deploying the Kairos challenger
@@ -474,6 +488,19 @@ entries:
     - https://github.com/kairos-io/helm-charts/releases/download/kairos-challenger-0.0.1/kairos-challenger-0.0.1.tgz
     version: 0.0.1
   kairos-crds:
+  - apiVersion: v2
+    created: "2026-01-27T14:46:16.477194593Z"
+    description: A Helm chart for deploying the Kairos CRDs
+    digest: b023522031cfa0d57678596c0f9c6636a998f04bff321c0a9451ebd3b5744813
+    home: https://kairos.io/
+    maintainers:
+    - email: mudler@kairos.io
+      name: Ettore Di Giacinto
+    name: kairos-crds
+    type: application
+    urls:
+    - https://github.com/kairos-io/helm-charts/releases/download/kairos-crds-0.0.16/kairos-crds-0.0.16.tgz
+    version: 0.0.16
   - apiVersion: v2
     created: "2024-11-15T15:10:48.149373484Z"
     description: A Helm chart for deploying the Kairos CRDs
@@ -843,4 +870,4 @@ entries:
     urls:
     - https://github.com/c3os-io/helm-charts/releases/download/osbuilder-0.0.1/osbuilder-0.0.1.tgz
     version: 0.0.1
-generated: "2025-12-17T06:54:18.68301839Z"
+generated: "2026-01-27T14:46:16.477378896Z"
